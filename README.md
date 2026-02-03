@@ -72,7 +72,7 @@ enforce a logical analysis order and reduce user error.
   interpretation.
 
 <center>
-<img src="images/csbCLUST2.png" width="85%">
+<img src="images/csbCLUST2.png" width="100%">
 </center>
 
 - The *Table* tab presents a quantitative summary of cluster metrics for
@@ -80,7 +80,7 @@ enforce a logical analysis order and reduce user error.
   cluster area, and total cluster area per image.
 
 <center>
-<img src="images/csbCLUST3.png" width="85%">
+<img src="images/csbCLUST3.png" width="100%">
 </center>
 
 - In the final *Exports* tab, the user selects an output directory and
