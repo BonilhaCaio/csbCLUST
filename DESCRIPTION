@@ -1,0 +1,30 @@
+Package: csbCLUST
+Type: Package
+Title: Automated Cluster Detection from Brightfield Microscopy Images
+Version: 1.0.0
+Authors@R:
+    person("Caio", "Bonilha", email = "your@email.com", role = c("aut", "cre"))
+Description:
+    An interactive Shiny application and image-processing backend for
+    automated detection, quantification, and export of clusters from
+    brightfield microscopy images.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports:
+    shiny,
+    shinyjs,
+    DT,
+    fontawesome,
+    colourpicker,
+    shinyFiles,
+    tibble,
+    EBImage,
+    dplyr,
+    stats,
+    utils
+BiocViews: Imaging
+Remotes:
+    bioc::EBImage
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
