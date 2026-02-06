@@ -21,30 +21,30 @@ corners, and illumination artefacts is required.
 **csbCLUST** depends on Bioconductor packages for image processing.
 Before installation, ensure that **Bioconductor** is available.
 
-    # install Bioconductor manager if needed
-    install.packages("BiocManager")
+``` r
+# install Bioconductor manager if needed
+install.packages("BiocManager")
 
-    # install required Bioconductor dependency
-    BiocManager::install("EBImage")
+# install required Bioconductor dependency
+BiocManager::install("EBImage")
 
-    # install devtools if needed
-    install.packages("devtools")
+# install devtools if needed
+install.packages("devtools")
 
-    # install csbCLUST from GitHub
-    devtools::install_github("BonilhaCaio/csbCLUST")
-
----
+# install csbCLUST from GitHub
+devtools::install_github("BonilhaCaio/csbCLUST")
+```
 
 ## Usage
 
 The **csbCLUST** Shiny application is launched through a single function:
 
-    csbCLUST::runCsbCLUST()
+``` r
+csbCLUST::runCsbCLUST()
 
 This command opens the interactive graphical user interface in a web
 browser or RStudio viewer.
-
----
+```
 
 ## User Guide
 
@@ -63,7 +63,7 @@ enforce a logical analysis order and reduce user error.
   feedback during processing, reflecting the multi-stage image analysis
   pipeline applied to each image.
 
-<img src="images/csbCLUST1.png" width="100%">
+<img src="images/csbCLUST1_v2.png" width="100%">
 
 - After processing, the *Clusters* tab allows visual inspection of
   individual images. Detected clusters are overlaid as circular outlines
@@ -72,7 +72,7 @@ enforce a logical analysis order and reduce user error.
   interpretation.
 
 <center>
-<img src="images/csbCLUST2.png" width="100%">
+<img src="images/csbCLUST2_v2.png" width="100%">
 </center>
 
 - The *Table* tab presents a quantitative summary of cluster metrics for
@@ -80,17 +80,17 @@ enforce a logical analysis order and reduce user error.
   cluster area, and total cluster area per image.
 
 <center>
-<img src="images/csbCLUST3.png" width="100%">
+<img src="images/csbCLUST3_v2.png" width="100%">
 </center>
 
 - In the final *Exports* tab, the user selects an output directory and
   exports all results in a single step. The export process generates a
-  global summary `.csv` file, per-image `.png` files with detected
+  global summary `.csv` file, per-image `_v2.png` files with detected
   clusters and optional scale bars, and per-image `.csv` files
   containing cluster geometry. A confirmation dialog is displayed upon
   successful completion.
 
-<img src="images/csbCLUST4.png" width="100%">
+<img src="images/csbCLUST4_v2.png" width="100%">
 
 ---
 
@@ -99,4 +99,6 @@ enforce a logical analysis order and reduce user error.
 A publication describing the methodology and software implementation is
 in preparation. In the meantime, **csbCLUST** can be cited as:
 
-    citation("csbCLUST")
+``` r
+citation("csbCLUST")
+```
